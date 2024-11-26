@@ -1,0 +1,108 @@
+/* Basic styles for .topbar */
+.topbar {
+    width: 100%; /* Changed from 100vw to 100% */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: aqua;
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+
+.topbar-left {
+    flex: 3;
+}
+
+.logo {
+    font-size: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+.topbar-center {
+    flex: 5;
+}
+
+.search-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    font-size: 14px;
+    flex: 1;
+}
+
+.topbar-right {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.topbar-link {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.topbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.topbar-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background-color: crimson;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.topbar-img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Mobile responsiveness for screen widths under 600px */
+@media only screen and (max-width: 600px) {
+    .topbar {
+        width: 100%; /* Ensure full width of the screen */
+        box-sizing: border-box; /* Include padding and border in the width */
+    }
+
+    .topbar-icons {
+        display: none;
+    }
+
+    .topbar-center {
+        display: none;
+    }
+}

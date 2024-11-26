@@ -1,0 +1,23 @@
+.main-container{
+    display: flex;
+    
+}
+.first{
+    flex: 3;
+}
+.last{
+    flex:4
+}
+@media only screen and (max-width: 600px) {
+   .main-container .first{
+    display: none;
+    
+   }
+   .main-container .last{
+    display: none;
+    
+   }
+   .main-container .center{
+    width: 100%;
+   }
+  }

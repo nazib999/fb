@@ -1,0 +1,82 @@
+.sidebar{
+    flex: 3;
+    height: calc(100vh - 50px);
+    position: sticky;
+    top: 60px;
+    overflow-y: auto;
+    
+}
+::-webkit-scrollbar{
+    width: 9px;
+  display: none;
+
+}
+.sidebar:hover::-webkit-scrollbar{
+    display:flex;
+}
+::-webkit-scrollbar-track{
+    background-color: #fff;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #c2c2cb;
+    border-radius: 5px;
+
+}
+.sidebar-wrapper{
+    padding: 20px;
+    padding-top: 0;
+}
+.sidebar-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+.sidebar-item:hover{
+    background-color: #efeff6;
+}
+.sidebar-icon{
+    margin-right: 20px;
+}
+.sidebar-btn{
+    width: 150px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.sidebar-hr{
+    margin: 20px 0;
+}
+.sidebar-friend{margin: 0;
+padding: 0;
+list-style: none;}
+.sidebar-friend-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 10px 5px;
+    cursor: pointer;
+
+}
+.sidebar-friend-item:hover{
+    background-color: #efeff6;
+}
+.sidebar-friend-img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
